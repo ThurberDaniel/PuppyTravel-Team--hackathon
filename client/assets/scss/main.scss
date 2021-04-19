@@ -1,0 +1,141 @@
+@import "./_variables.scss";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "./_overrides.scss";
+@import "./custom.scss";
+@import "./loaders.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@400;700&display=swap');
+
+// font-family: 'Lato', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+$primary-color: #14213d;
+$accent-color: #0077b6;
+
+// * {
+//   border: 1px solid red;
+// }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+i {
+  cursor: pointer;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.heart-count {
+  font-size: 3rem;
+}
+
+.image-container {
+  max-height: 40vh !important;
+}
+
+.paw-icon {
+  position: absolute;
+  top: -5%;
+  left: 0%;
+  transform: rotate(-30deg);
+  font-size: 25rem;
+  color: #334262a8;
+  z-index: 0;
+}
+
+.searchbar {
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.bg-main {
+  background-color: $primary-color;
+}
+
+.post-img {
+  width: 100%;
+  object-fit: cover;
+  background-position: center;
+  margin: 0 auto;
+}
+
+.comment-input {
+  min-width: 70% !important;
+  padding-right: 300px;
+  background-color: white;
+}
+
+.main-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 13rem !important;
+  z-index: 100 !important;
+}
+
+.image-card-title {
+  font-size: 4rem;
+}
+
+small {
+  font-size: 14px !important;
+}
+
+.logo {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.ad-card-1 {
+  height: 500px;
+  border: 5px solid #fff;
+  background-image: url(https://images.pexels.com/photos/933498/pexels-photo-933498.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  display: grid;
+  place-items: center;
+  background-position: center;
+  background-size: cover;
+}
+
+.ad-card-2 {
+  height: 500px;
+  border: 5px solid #fff;
+  background-image: url(https://images.pexels.com/photos/825947/pexels-photo-825947.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  display: grid;
+  place-items: center;
+  background-position: center;
+  background-size: cover;
+}
+
+.ad-card-3 {
+  height: 500px;
+  border: 5px solid #fff;
+  background-image: url(https://files.slack.com/files-pri/T1GGQN1RU-F01UMLTBE59/dddougnuts.png);
+  display: grid;
+  place-items: center;
+  background-position: center;
+  background-size: cover;
+}
+
+.ad-title {
+  z-index: 2;
+  color: black;
+  width: 100%;
+}
+
+.bg-darkish {
+  background-color: rgba(0, 0, 0, 0.6)
+}
